@@ -1,0 +1,147 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 16, 99);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 16, 99);
+}
+/* global styling */
+body {
+  overflow-x: hidden;
+  direction: ltr;
+  height: 100% !important;
+}
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+  height: 100% !important;
+}
+div:where(.swal2-container) h2:where(.swal2-title) {
+  font-size: 20px !important;
+  padding: 0px;
+}
+#app,
+html {
+  height: 100%;
+}
+#app .Pages {
+  background: #f0f0f0 !important;
+  height: 100%;
+  .logo-mobile {
+    display: none;
+  }
+  > .row {
+    background: #f0f0f0 !important;
+    > div {
+      margin: 0px;
+      padding: 3px;
+      padding-bottom: 50px;
+      height: 100%;
+    }
+  }
+}
+input[type="file"] {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+input,
+select {
+  margin-bottom: 15px !important;
+  padding: 10px 15px !important;
+}
+input[type="checkbox"] {
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+  vertical-align: middle;
+  accent-color: #f4a71d;
+  height: 20px;
+  width: 20px;
+}
+textarea {
+  overflow: auto !important;
+}
+form {
+  .star::after {
+    content: "*";
+  }
+}
+.card {
+  border: 0px !important;
+}
+.font-bold {
+  font-weight: bold;
+}
+.form-select:focus {
+  box-shadow: none !important;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+.row {
+  max-width: 100% !important;
+  width: 100% !important;
+  overflow-x: hidden;
+}
+.container {
+  overflow-x: hidden;
+}
+.color-main {
+  color: #f4a71d;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+.header_title {
+  font-weight: 700;
+}
+p {
+  color: #817f91;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+ul {
+  list-style-type: none;
+}
+.invalid-feedback {
+  margin-top: 0px !important;
+  font-size: 12px;
+  color: rgba(255, 0, 0, 0.682) !important;
+}
+.color-white {
+  color: white;
+}
+.simple-button button:disabled {
+  background: #bcbcbc !important;
+  color: black !important;
+}
+@media screen and (max-width: 992px) {
+  p {
+    font-size: 14px !important;
+  }
+  h2 {
+    font-size: 26px !important;
+  }
+  .Pages {
+    .logo-mobile {
+      display: block;
+      text-align: center;
+    }
+  }
+}
