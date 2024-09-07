@@ -1,6 +1,6 @@
 <template>
   <div class="Navbar d-flex w-100 justify-space-between align-center px-3">
-    <h1 class="m-0 p-0">Logo</h1>
+    <h5 class="m-0 p-0">Logo</h5>
     <langButton class="text-end" />
   </div>
 </template>
