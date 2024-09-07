@@ -87,9 +87,7 @@ const loading = ref(false);
 const onSubmit = async () => {
   if (!form.value) return;
   loading.value = true;
-  console.log(FormData.value);
   if (props.idUpdate) {
-    console.log(FormData.value);
     await Products.UpdateProduct(props.idUpdate, FormData.value);
   } else {
     await Products.AddProduct(FormData.value);
@@ -122,6 +120,7 @@ const resetData = () => {
   FormData.value.price = 0;
   FormData.value.description = "";
 };
+//when open popup to update
 watch(props, (newpage) => {
   if (Products.Products.length > 0 && props.idUpdate) {
     Products.Products.find((e) => {
@@ -133,7 +132,6 @@ watch(props, (newpage) => {
         };
       }
     });
-    console.log(FormData.value);
     loading.value = false;
   }
 });

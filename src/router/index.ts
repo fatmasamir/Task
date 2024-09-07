@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import type { RouteRecordRaw } from "vue-router";
 import Homepage from "@/views/Homepage/Main.vue";
 import Products from "@/views/Products/Main.vue";
-import ShowProduct from "@/views/Products/ShowProduct/index.vue";
+import ShowProduct from "@/views/Products/ProductShow/index.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",

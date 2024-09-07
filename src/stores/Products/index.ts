@@ -31,7 +31,6 @@ export const UseProducts = defineStore("Products", () => {
     if (response.ok) {
       response.json().then((data) => {
         Products.value = Products.value.filter((e) => e.id !== id);
-        console.log("Bloges.value", Products.value);
         toast.success("Successfully ...");
       });
     } else {
@@ -47,9 +46,7 @@ export const UseProducts = defineStore("Products", () => {
     });
     if (response.ok) {
       response.json().then((data) => {
-        console.log("response ====", data);
         Products.value.unshift(data);
-        console.log(Products.value);
         toast.success("Successfully ...");
       });
     } else {
@@ -65,21 +62,10 @@ export const UseProducts = defineStore("Products", () => {
     });
     if (response.ok) {
       response.json().then((data) => {
-        // Products.value = Products.value.find((e) => {
-        //   if (e.id == id) {
-        //     e.title = data.title;
-        //     e.description = data.description;
-        //     e.price = data.price;
-        //     console.log("data ===", e);
-        //     return e;
-        //   }
-        // });
         const index = Products.value.findIndex((item) => {
           return data.id === item.id;
         });
-        console.log("index====", index);
         Products.value.splice(index, 1, data);
-        console.log("Products.value====", Products.value);
         toast.success("Successfully ...");
       });
     } else {
