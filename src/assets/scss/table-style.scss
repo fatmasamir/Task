@@ -1,0 +1,16 @@
+table {
+  th,
+  td {
+    text-align: left !important;
+    padding: 20px !important;
+  }
+  thead {
+    background: #bdbdbd73;
+    border: 0px !important;
+  }
+}
+.v-data-table-rows-loading td {
+  text-align: center !important;
+  font-size: 20px;
+  padding: 100px 0px !important;
+}

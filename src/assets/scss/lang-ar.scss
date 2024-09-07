@@ -1,0 +1,28 @@
+.is-ar {
+  body {
+    direction: rtl;
+  }
+  .v-navigation-drawer {
+    right: 0px;
+    left: auto;
+  }
+  table {
+    direction: rtl !important;
+    table th,
+    table td {
+      text-align: right !important;
+    }
+  }
+  .v-dialog > .v-overlay__content {
+    direction: rtl !important;
+  }
+  table {
+    th,
+    td {
+      text-align: right !important;
+    }
+  }
+  .v-field {
+    direction: rtl !important;
+  }
+}

@@ -21,7 +21,7 @@ let callServer: CallFunction = async (options) => {
   };
 
   // base url
-  const base_url: string = `http://api.rris-ahmed.website`;
+  const base_url: string = `https://dummyjson.com`;
 
   const end_point: string = `${base_url}/${options.url}`;
   // header
