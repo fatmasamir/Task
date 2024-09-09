@@ -8,10 +8,13 @@
   }
   table {
     direction: rtl !important;
-    table th,
-    table td {
+    th,
+    td {
       text-align: right !important;
     }
+  }
+  table .v-data-table-rows-loading td {
+    text-align: center !important;
   }
   .v-dialog > .v-overlay__content {
     direction: rtl !important;

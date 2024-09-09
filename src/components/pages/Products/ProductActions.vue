@@ -20,7 +20,9 @@
                   v-else
                   class="imagePostion"
                 />
-                <v-icon icon="mdi-upload"></v-icon>
+                <span class="div-icon">
+                  <v-icon icon="mdi-upload"></v-icon
+                ></span>
                 <input
                   type="file"
                   name="headerImg"
@@ -177,7 +179,7 @@ watch(props, (newpage) => {
 </script>
 <style scoped lang="scss">
 .imageProfile {
-  width: 10%;
+  width: max-content;
   margin: auto;
   position: relative;
   cursor: pointer;
@@ -191,16 +193,21 @@ watch(props, (newpage) => {
     z-index: 000000;
     top: 0px;
   }
-  i {
+  .div-icon {
     position: absolute;
     top: 24%;
-    left: 5px;
-    background: #46277c;
+    left: 0px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
     font-size: 19px;
-    color: white;
-    border-radius: 100%;
-    padding: 17px;
-    opacity: 0;
+    i {
+      background: #46277c;
+      color: white;
+      opacity: 0;
+      padding: 17px;
+      border-radius: 100%;
+    }
   }
   .imagePostion {
     width: 70px;
