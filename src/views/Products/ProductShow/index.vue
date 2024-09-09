@@ -86,4 +86,9 @@ onMounted(async () => {
   height: 250px;
   margin: 10px auto;
 }
+@media screen and (max-width: 1500px) {
+  .v-card {
+    max-width: 100% !important;
+  }
+}
 </style>

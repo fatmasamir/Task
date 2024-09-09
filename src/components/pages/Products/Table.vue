@@ -27,6 +27,9 @@
         {{ value }}
       </v-chip>
     </template>
+    <template v-slot:item.description="{ value }">
+      {{ value.substring(0, 40) + ".." }}
+    </template>
     <template v-slot:item.action="{ item }">
       <v-menu open-on-hover block>
         <template v-slot:activator="{ props }">
