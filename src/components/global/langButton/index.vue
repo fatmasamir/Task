@@ -31,11 +31,11 @@ let lang = ref(
 i18n.locale.value = localStorage.getItem("lang")
   ? localStorage.getItem("lang")
   : "ar";
-let changeLang = (lang_targe) => {
+let changeLang = async (lang_targe) => {
   localStorage.setItem("lang", lang_targe);
   i18n.locale.value = lang_targe;
   lang.value = lang_targe;
-  Language.changeLayout();
+  await Language.changeLayout();
 };
 </script>
 <style scoped lang="scss">

@@ -3,7 +3,7 @@
     <v-dialog v-model="props.dialog" max-width="600">
       <v-card
         prepend-icon="mdi-account"
-        :title="idUpdate ? 'Edit Product' : 'Add Product'"
+        :title="idUpdate ? t('EditProduct') : t('AddProduct')"
         class="p-3"
       >
         <v-form v-model="form" @submit.prevent="onSubmit">

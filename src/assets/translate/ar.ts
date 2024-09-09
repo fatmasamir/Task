@@ -14,5 +14,9 @@ const ar = {
   MessageDelete: "هل انت حقا تريد حذف المنتج",
   Add_New_Product: "إضافه منتج جديد",
   id: "*",
+  AddProduct: "إضافه منتج",
+  EditProduct: "تعديل منتج",
+  back: "الرجوع",
+  Delete: "عمليه الحذف ",
 };
 export default ar;

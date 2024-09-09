@@ -18,7 +18,7 @@
     <!--Delete product-->
     <DialogDelete
       :text="t('MessageDelete')"
-      title="Delete !"
+      :title="t('Delete')"
       :dialog="dialog"
       @DeleteItem="DeleteItem"
       :loading="loadingDelete"

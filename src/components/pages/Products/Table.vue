@@ -7,6 +7,13 @@
     loading-text="Loading ...."
     items-per-page="5"
   >
+    <template v-slot:headers="{ columns }">
+      <tr>
+        <template v-for="column in columns" :key="column">
+          <td>{{ t(column.title) }}</td>
+        </template>
+      </tr>
+    </template>
     <template v-slot:item.thumbnail="{ item }">
       <img :src="item.thumbnail" class="imagePro" v-if="item.thumbnail" />
       <img
@@ -53,8 +60,11 @@
   >
 </template>
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
+import { useLang } from "@/stores/lang";
+// Language
+const Language = useLang();
 const props = defineProps(["Products"]);
 // i18n
 const { t } = useI18n();
@@ -64,7 +74,7 @@ const totalItems = ref(0);
 const serverItems = ref([]);
 let headers = ref([
   {
-    title: t("id"),
+    title: "id",
     key: "id",
     sortable: true,
   },
@@ -73,19 +83,19 @@ let headers = ref([
   //   key: "thumbnail",
   // },
   {
-    title: t("title"),
+    title: "title",
     key: "title",
   },
   {
-    title: t("price"),
+    title: "price",
     key: "price",
   },
   {
-    title: t("description"),
+    title: "description",
     key: "description",
   },
   {
-    title: t("action"),
+    title: "action",
     key: "action",
   },
 ]);

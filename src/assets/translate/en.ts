@@ -14,6 +14,10 @@ const en = {
   MessageDelete: "Realy Want To Delete This Product",
   Add_New_Product: "Add New Product",
   id: "id",
+  AddProduct: "Add Product",
+  EditProduct: "Edit Product",
+  back: "Back",
+  Delete: "Delete !",
 };
 
 export default en;
