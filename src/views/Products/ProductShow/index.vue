@@ -10,9 +10,9 @@
     </v-btn>
     <v-card max-width="50%" v-if="!loading" class="p-4"
       ><img
-        :src="Product.thumbnail"
+        :src="Product.images[0]"
         class="imge-pro"
-        v-if="Product.thumbnail"
+        v-if="Product.images[0]"
       />
       <img
         src="@/assets/images/img-box-svgrepo-com.svg"

@@ -4,8 +4,8 @@
       <Slidbar @showingslider="showingslider" />
     </div>
     <div class="content">
-      <navbar :showMobile="showMobile" @showingslider="showingslider"></navbar
-      ><router-view @click="showMobile = false"></router-view></div
+      <navbar :showMobile="showMobile" @showingslider="showingslider"></navbar>
+      <router-view @click="showMobile = false"></router-view></div
   ></v-layout>
 </template>
 <script setup>

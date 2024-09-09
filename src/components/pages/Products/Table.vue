@@ -14,8 +14,8 @@
         </template>
       </tr>
     </template>
-    <template v-slot:item.thumbnail="{ item }">
-      <img :src="item.thumbnail" class="imagePro" v-if="item.thumbnail" />
+    <template v-slot:item.images="{ item }">
+      <img :src="item.images[0]" class="imagePro" v-if="item.images" />
       <img
         src="@/assets/images/img-box-svgrepo-com.svg"
         class="imagePro"
@@ -81,10 +81,10 @@ let headers = ref([
     key: "id",
     sortable: true,
   },
-  // {
-  //   title: "",
-  //   key: "thumbnail",
-  // },
+  {
+    title: "",
+    key: "images",
+  },
   {
     title: "title",
     key: "title",

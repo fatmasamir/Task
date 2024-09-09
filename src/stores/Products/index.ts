@@ -42,6 +42,7 @@ export const UseProducts = defineStore("Products", () => {
     const response = await callServer({
       url: `products/add`,
       method: "POST",
+      type: "",
       data,
     });
     if (response.ok) {
@@ -58,6 +59,7 @@ export const UseProducts = defineStore("Products", () => {
     const response = await callServer({
       url: `products/${id}`,
       method: "PUT",
+      type: "",
       data,
     });
     if (response.ok) {
